@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        
+	<RelativeLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:background="#242424">
+	     	<TextView
+	     		android:id="@+id/bdTitleBar"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="wrap_content"
+	     		android:textAppearance="?android:attr/textAppearanceLarge"
+	     		android:text="경매정보"
+	     		android:layout_centerHorizontal="true"
+	     		android:gravity="center_horizontal"
+	     		android:layout_marginLeft="10dip"
+	     		android:layout_marginTop="3dip"
+	     		android:layout_marginBottom="3dip">
+	     	</TextView>
+	     	<Button
+	     		android:id="@+id/bdBtn"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="40dip"
+	     		android:text="경매참여"
+	     		android:textAppearance="?android:attr/textAppearanceSmall"
+	     		android:layout_alignParentRight="true"
+	     		android:layout_centerVertical="true"
+	     		android:layout_gravity="right"
+	     		android:layout_marginRight="5dip"/>
+	</RelativeLayout>   
+    
+  	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dip"
+			android:stretchColumns="*">
+			<TableRow android:layout_margin="2dip">
+				<TextView
+					android:text="제목 :"
+					android:textColor="#ffffff"
+					android:textSize="25px"/>
+				<TextView
+					android:id="@+id/bdTitleText"
+					android:gravity="left"
+					android:textSize="22px"
+					
+					android:layout_span="3"
+					/>
+			</TableRow>			
+			<TableRow android:layout_margin="2dip">
+				<TextView
+					android:text="상태 :"
+					android:textColor="#ffffff"
+					android:textSize="25px"/>
+				<TextView
+					android:id="@+id/bdStatusText"
+					android:gravity="left"
+					android:textSize="22px"
+					android:layout_width="60px"
+					/>
+				<TextView
+					android:text="낙찰자 :"
+					android:textColor="#ffffff"
+					android:textSize="25px"/>
+				<TextView
+					android:id="@+id/bdWinningBidder"
+					android:gravity="left"
+					android:textSize="22px"/>    						
+			</TableRow>
+			<TableRow android:layout_margin="2dip">
+				<TextView
+					android:text="시작일 :"
+					android:textColor="#ffffff"
+					android:textSize="25px"/>
+				<TextView
+					android:id="@+id/bdStartDateText"
+					android:gravity="left"
+					android:textSize="22px"/>
+				<TextView
+					android:text="종료일 :"
+					android:textColor="#ffffff"
+					android:textSize="25px"/>
+				<TextView
+					android:id="@+id/bdEndDateText"
+					android:gravity="left"
+					android:textSize="22px"/>    			
+			</TableRow>   
+			<TableRow android:layout_margin="2dip">
+				<TextView
+					android:text="시작가 :"
+					android:textColor="#ffffff"
+					android:textSize="25px"/>
+				<TextView
+					android:id="@+id/bdStartPriceText"
+					android:gravity="left"
+					android:textSize="22px"/>
+				<TextView
+					android:text="낙찰가 :"
+					android:textColor="#ffffff"
+					android:textSize="25px"/>
+				<TextView
+					android:id="@+id/bdWinningPriceText"
+					android:gravity="left"
+					android:textSize="22px"/>    			
+		 			
+			</TableRow>    				
+		</TableLayout>
+	</LinearLayout>
+	<ScrollView
+	 	android:id="@+id/scrollView"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="130dip"> 
+	 	<TextView 
+			android:id="@+id/bdDescriptionText"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:textColor="#000000"
+			android:background="#DBCAFF"
+			android:textSize="25px"
+			android:layout_margin="5dip"
+			android:text="경매내용">
+		</TextView>  
+	</ScrollView>
+    <LinearLayout
+   		android:layout_width="fill_parent"
+   		android:layout_height="200dip"
+   		android:orientation="vertical">
+   		<TextView 
+     		android:layout_width="fill_parent"
+     		android:layout_height="wrap_content"
+     		android:textAppearance="?android:attr/textAppearanceLarge"
+     		android:text="경매참여현황"
+     		android:layout_marginTop="3dip"
+     		android:layout_marginBottom="3dip"/>   
+     	<LinearLayout 
+     		android:layout_width="fill_parent"
+     		android:layout_height="fill_parent"
+     		android:background="#DBCAFF">		
+	   		<ListView android:id="@+id/bdActivities"
+	   			android:cacheColorHint="#00000000"
+	      		android:layout_width="fill_parent" 
+	       		android:layout_height="150dip"/>
+   		</LinearLayout>	
+	</LinearLayout>     	
+  	
+</LinearLayout> 

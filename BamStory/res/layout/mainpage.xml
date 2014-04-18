@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ImageView android:id="@+id/main_background"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:src="@drawable/main_background"/>
+    <TableLayout 
+    	android:layout_width="fill_parent" android:layout_height="wrap_content"
+    	android:layout_alignParentLeft="true"
+    	android:layout_marginTop="150dip"
+    	android:layout_marginLeft="30dip" 
+    	android:layout_marginRight="30dip"
+    	android:stretchColumns="*">
+    	<TableRow android:layout_margin="2dip">
+			<ImageButton android:id="@+id/main_sudaBtn"
+				android:background="#a0000000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/m_sudabtn"/>
+			<ImageButton android:id="@+id/main_bamstoryBtn"
+				android:background="#a0000000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/m_bsbtn"/>
+			<ImageButton android:id="@+id/main_locationBtn"
+				android:background="#a0000000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/m_mapbtn"/>							
+		</TableRow>
+    	<TableRow android:layout_margin="2dip">
+			<TextView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="center" android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="밤스수다방"/>
+			<TextView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="center" android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="밤스토리"/>
+			<TextView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="center" android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="위치기반찾기"/>													
+		</TableRow>
+    	<TableRow android:layout_margin="2dip">
+			<ImageButton android:id="@+id/main_girlBtn"
+				android:background="#a0000000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/m_girlbtn"/>
+			<ImageButton android:id="@+id/main_eventBtn"
+				android:background="#a0000000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/m_eventbtn"/>
+			<ImageButton android:id="@+id/main_configBtn"
+				android:background="#a0000000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/m_configbtn"/>							
+		</TableRow>		    
+    	<TableRow android:layout_margin="2dip">
+			<TextView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="center" android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="밤스언니네"/>
+			<TextView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="center" android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="이벤트"/>
+			<TextView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="center" android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="환경설정"/>													
+		</TableRow>
+    	<TableRow android:layout_margin="2dip">
+			<ImageButton android:id="@+id/main_noticeBtn"
+				android:background="#a0000000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/m_noticebtn"/>
+			<ImageButton android:id="@+id/main_pollBtn"
+				android:background="#a0000000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/m_pollbtn"/>
+							
+		</TableRow>		    
+    	<TableRow android:layout_margin="2dip">
+			<TextView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="center" android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="공지사항"/>
+			<TextView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="center" android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="설문조사"/>
+												
+		</TableRow>		    
+    </TableLayout>
+    
+    
+</RelativeLayout>

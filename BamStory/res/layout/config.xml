@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_root" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="10dp">
+	<RelativeLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:background="#242424">    
+	     	<TextView
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="wrap_content"
+	     		android:textAppearance="?android:attr/textAppearanceLarge"
+	     		android:text="환경설정"
+	     		android:layout_centerHorizontal="true"
+	     		android:gravity="center_horizontal"
+	     		android:layout_marginLeft="10dip"
+	     		android:layout_marginTop="3dip"
+	     		android:layout_marginBottom="3dip">
+	     	</TextView>
+	     	<Button
+	     		android:id="@+id/config_saveBtn"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="40dip"
+	     		android:text="저장"
+	     		android:textAppearance="?android:attr/textAppearanceSmall"
+	     		android:layout_alignParentRight="true"
+	     		android:layout_centerVertical="true"
+	     		android:layout_gravity="right"
+	     		android:layout_marginRight="5dip"/>
+	     		
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="fill_parent" android:orientation="horizontal"
+		android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+		
+		<TextView android:id="@+id/config_memberTypeText" android:text="회원종류" 
+			android:layout_width="wrap_content" android:layout_height="80px" android:lines="1" 
+			android:layout_alignParentLeft="true" android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="left|center_vertical" 
+			android:layout_marginLeft="10px"></TextView>
+			
+		<TextView android:id="@+id/config_memberType"
+			android:layout_width="wrap_content" android:layout_height="80px" android:lines="1" 
+			android:layout_alignParentRight="true" 
+			android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="left|center_vertical" 
+			android:layout_marginRight="10px"></TextView>
+	
+		<TextView android:text="자동로그인" android:id="@+id/config_autoLoginText" 
+			android:layout_width="wrap_content" android:layout_height="80px" 
+			android:lines="1" android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="left|center_vertical" 
+			android:layout_below="@+id/config_memberTypeText" android:layout_marginLeft="10px"></TextView>
+						
+		<CheckBox android:layout_height="80px" android:text="" 
+			android:id="@+id/config_autoLogin" 
+			android:layout_alignParentRight="true"  android:layout_below="@+id/config_memberType" 
+			android:gravity="right|center_vertical" android:layout_width="wrap_content" 
+			android:layout_marginRight="10px"></CheckBox>
+		
+		<TextView android:id="@+id/config_loginIdText" android:text="아이디" 
+			android:layout_width="wrap_content" android:layout_height="80px" android:lines="1" 
+			android:layout_below="@+id/config_autoLoginText"
+			android:layout_alignParentLeft="true" android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="left|center_vertical" 
+			android:layout_marginLeft="10px"></TextView>
+			
+		<TextView android:id="@+id/config_loginId"
+			android:layout_width="wrap_content" android:layout_height="80px" android:lines="1" 
+			android:layout_alignParentRight="true" 
+			android:layout_below="@+id/config_autoLogin"
+			android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="left|center_vertical" 
+			android:layout_marginRight="10px"></TextView>
+				
+		<TextView android:text="닉네임" android:id="@+id/config_nickNameText" 
+			android:layout_width="wrap_content" android:layout_height="80px" 
+			android:lines="1" android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:gravity="left|center_vertical" 
+			android:layout_below="@+id/config_loginIdText" android:layout_marginLeft="10px" ></TextView>
+		
+		<EditText android:id="@+id/config_nickName" android:layout_height="80px" android:text="" 
+			android:layout_alignParentRight="true"  android:layout_below="@+id/config_loginId" 
+			android:maxLength="10" 
+			android:layout_width="220px" android:gravity="right|center_vertical"></EditText>	
+	
+		<TextView android:text="프로필이미지" android:layout_width="wrap_content"
+			android:layout_height="80px" android:id="@+id/config_changeProfileText"
+			android:lines="1" android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:gravity="left|center_vertical" 
+			android:layout_below="@+id/config_nickNameText" android:layout_marginLeft="10px" ></TextView>
+		<Button android:id="@+id/config_changeProfileBtn" android:text="변경하기"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@+id/config_nickName" android:layout_alignParentRight="true"></Button>
+		<ImageView android:id="@+id/config_profileImage" android:layout_marginRight="10dip"
+			android:layout_toLeftOf="@+id/config_changeProfileBtn"
+			android:layout_below="@+id/config_nickName"
+			android:layout_width="40dip" android:layout_height="40dip"></ImageView>
+	</RelativeLayout>
+</LinearLayout>

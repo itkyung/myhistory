@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="fill_parent" android:orientation="horizontal"
+	android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<TextView android:text="" android:id="@+id/Name" 
+		android:layout_width="wrap_content" android:layout_height="80px" android:lines="1" android:layout_alignParentLeft="true" android:textSize="13pt" android:gravity="left|center_vertical"></TextView>
+		
+	<TextView android:text="" android:id="@+id/Date" android:gravity="bottom|right"
+		android:layout_width="140px" android:layout_height="80px" android:lines="1" 
+		android:layout_alignParentRight="true" android:textColor="#ff0000" android:textSize="6pt" 
+		android:textStyle="italic"></TextView>
+	
+	
+</RelativeLayout>

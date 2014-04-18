@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:background="#242424">     
+	     	<TextView
+	     		android:id="@+id/titleBar"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="wrap_content"
+	     		android:textAppearance="?android:attr/textAppearanceLarge"
+	     		android:text="밤스토리"
+	     		android:layout_centerHorizontal="true"
+	     		android:gravity="center_horizontal"
+	     		android:layout_marginLeft="10dip"
+	     		android:layout_marginTop="3dip"
+	     		android:layout_marginBottom="3dip">
+	     	</TextView>
+
+	     		
+	</RelativeLayout>
+	<RelativeLayout 
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ImageView android:id="@+id/intro_background"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+     	<Button
+     		android:id="@+id/intro_ok"
+     		android:layout_width="wrap_content"
+     		android:layout_height="40dip"
+     		android:text="확인"
+     		android:layout_alignParentRight="true"
+	       	android:layout_alignParentBottom="true"	
+     		android:textAppearance="?android:attr/textAppearanceSmall"
+     		android:layout_gravity="right"
+     		android:layout_marginRight="5dip"/>		
+	</RelativeLayout>
+</LinearLayout>

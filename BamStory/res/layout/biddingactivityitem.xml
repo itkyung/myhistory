@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="35dip"
+	android:orientation="horizontal"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView
+		android:id="@+id/bdActivityNickName"
+		android:layout_width="150dip"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5px"
+		android:layout_marginBottom="5px"
+		android:layout_marginLeft="15px"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+	>
+	</TextView>	
+	<TextView
+		android:id="@+id/bdActivityPrice"
+		android:layout_width="150dip"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_marginLeft="15px">
+	</TextView>	
+</LinearLayout>

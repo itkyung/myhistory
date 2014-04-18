@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_width="fill_parent" 
+  	android:orientation="vertical"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+	<RelativeLayout android:id="@+id/RelativeLayout01" 
+		android:layout_width="fill_parent" android:layout_height="35dip">
+		<Button android:text="현위치" android:id="@+id/CurrntBtn" 
+			android:layout_width="100dip" android:layout_height="35dip"
+			android:layout_alignParentLeft="true" android.paddingLeft="3dip"
+			android:scaleType="centerInside"></Button>
+		
+	
+	
+	</RelativeLayout>
+	<com.google.android.maps.MapView android:id="@+id/map1" android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:clickable="true" android:apiKey="08HgmyFokl-ZtyOv9mCGEeR0VXGQVx-GjLWQuQw"
+    /> 
+</LinearLayout>
+

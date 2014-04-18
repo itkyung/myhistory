@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<color name="menuPressedColor">#2f0036</color>
+	<color name="menuUnPressedColor">#353535</color>
+	<color name="textBgColor">#DBCAFF</color>
+	<color name="topRowColor">#4f4f4f</color>
+</resources>

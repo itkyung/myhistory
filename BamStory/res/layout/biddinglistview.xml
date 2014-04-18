@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/biddingListView"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout
+		android:id="@+id/biddingListView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentLeft="true"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+		<TextView
+			android:id="@+id/biddingPartnerText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5px"
+			android:layout_marginBottom="5px"
+			android:layout_marginLeft="15px"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+		>
+		</TextView>	
+		<TextView
+			android:id="@+id/biddingTitleText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="경매제목"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_alignParentBottom="true" android:layout_centerHorizontal="false"
+			android:layout_marginLeft="15px" android:layout_centerVertical="true">
+		</TextView>	
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/biddingListView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentRight="true" 
+		xmlns:android="http://schemas.android.com/apk/res/android">	
+		<ImageView
+			android:id="@+id/biddingStatusImg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="2dip"
+		>
+		</ImageView>
+		<ImageView
+			android:id="@+id/biddingResultImg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="2dip"
+		>
+		</ImageView>	
+	</LinearLayout>
+	
+</RelativeLayout>

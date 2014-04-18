@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/Community" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<ImageButton
+		android:id="@+id/NoticeBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dip"
+		android:layout_alignParentTop="true"
+		android:background="#a0000000"
+		android:layout_centerHorizontal="true"
+		android:src="@drawable/noticebtn">
+	</ImageButton>
+	
+	<ImageButton
+		android:id="@+id/PollBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/NoticeBtn"
+		android:layout_alignLeft="@+id/NoticeBtn"
+		android:background="#a0000000"
+		android:layout_marginTop="30dip"
+		android:src="@drawable/pollbtn"
+	>
+	</ImageButton>
+	
+
+</RelativeLayout>

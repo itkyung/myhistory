@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/myBiddingListView"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout
+		android:layout_width="180dip"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentLeft="true"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+		<TextView
+			android:id="@+id/myBiddingPartnerText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5px"
+			android:layout_marginBottom="5px"
+			android:layout_marginLeft="15px"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+		>
+		</TextView>	
+		<TextView
+			android:id="@+id/myBiddingTitleText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="경매제목"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_alignParentBottom="true" android:layout_centerHorizontal="false"
+			android:layout_marginLeft="15px" android:layout_centerVertical="true">
+		</TextView>	
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="90dip"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+		<TextView
+			android:id="@+id/myBiddingBidDate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5px"
+			android:layout_marginBottom="5px"
+			android:layout_marginLeft="10px"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+		>
+		</TextView>	
+		<TextView
+			android:id="@+id/myBiddingBidPrice"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="금액"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_alignParentBottom="true" android:layout_centerHorizontal="false"
+			android:layout_marginLeft="10px" android:layout_centerVertical="true">
+		</TextView>	
+	</LinearLayout>	
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		xmlns:android="http://schemas.android.com/apk/res/android">	
+		<ImageView
+			android:id="@+id/myBiddingStatusImg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="2dip"
+		>
+		</ImageView>
+		<ImageView
+			android:id="@+id/myBiddingResultImg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="2dip"
+		>
+		</ImageView>	
+	</LinearLayout>
+	
+</LinearLayout>

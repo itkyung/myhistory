@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:background="#242424"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+     	<TextView
+     		android:id="@+id/titleBar"
+     		android:layout_width="fill_parent"
+     		android:layout_height="wrap_content"
+     		android:textAppearance="?android:attr/textAppearanceLarge"
+     		android:text="타이틀"
+     		android:gravity="center_horizontal"
+     		android:layout_marginLeft="10dip"
+     		android:layout_marginTop="3dip"
+     		android:layout_marginBottom="3dip">
+     	</TextView>
+</LinearLayout>   
+

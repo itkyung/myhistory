@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_root" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="10dp">
+	<RelativeLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:background="#242424">
+	     	<Button
+	     		android:id="@+id/regist_cancelBtn"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="40dip"
+	     		android:text="취소"
+	     		android:textAppearance="?android:attr/textAppearanceSmall"
+	     		android:layout_alignParentLeft="true"
+	     		android:layout_centerVertical="true"
+	     		android:layout_gravity="right"
+	     		android:layout_marginRight="5dip"/>	     
+	     	<TextView
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="wrap_content"
+	     		android:textAppearance="?android:attr/textAppearanceLarge"
+	     		android:text="회원가입"
+	     		android:layout_centerHorizontal="true"
+	     		android:gravity="center_horizontal"
+	     		android:layout_marginLeft="10dip"
+	     		android:layout_marginTop="3dip"
+	     		android:layout_marginBottom="3dip">
+	     	</TextView>
+	     	<Button
+	     		android:id="@+id/regist_saveBtn"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="40dip"
+	     		android:text="가입"
+	     		android:textAppearance="?android:attr/textAppearanceSmall"
+	     		android:layout_alignParentRight="true"
+	     		android:layout_centerVertical="true"
+	     		android:layout_gravity="right"
+	     		android:layout_marginRight="5dip"/>
+	     		
+	</RelativeLayout>
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="800dip">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+		
+			<TableLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dip"
+				android:stretchColumns="*">
+				<TableRow android:layout_margin="2dip">
+					<TextView
+						android:text="이름 :"
+						android:textColor="#ffffff"
+						android:textSize="25px"/>
+					<EditText
+						android:id="@+id/regist_name"
+						android:gravity="left"
+						android:layout_width="100dip" 
+						android:layout_height="40dip"
+						android:textSize="18px"
+						android:hint="단지 성인인증에만 사용됩니다."				
+						android:layout_marginRight="5dip"
+						/>	
+				</TableRow>
+				<TableRow android:layout_margin="2dip">
+					<TextView
+						android:text="주민번호 :"
+						android:textColor="#ffffff"
+						android:textSize="25px"/>
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<EditText
+							android:id="@+id/regist_social1"
+							android:gravity="left"
+							android:layout_width="100dip" 
+							android:layout_height="40dip"
+							android:layout_marginRight="5dip"
+							android:textSize="18px"
+							/>	
+						<EditText
+							android:id="@+id/regist_social2"
+							android:gravity="left"
+							android:layout_width="100dip" 
+							android:layout_height="40dip"
+							android:layout_marginRight="5dip"
+							android:textSize="18px"
+							android:password="true"
+							/>					
+					</LinearLayout>
+				</TableRow>
+				<TableRow android:layout_margin="2dip">
+					<TextView
+						android:text="아이디 :"
+						android:textColor="#ffffff"
+						android:textSize="25px"/>
+					<EditText
+						android:id="@+id/regist_id"
+						android:gravity="left"
+						android:layout_width="100dip" 
+						android:layout_height="40dip"
+						android:textSize="22px"
+						android:layout_marginRight="5dip"
+						/>	
+				</TableRow>	
+				<TableRow android:layout_margin="2dip">
+					<TextView
+						android:text="비밀번호 :"
+						android:textColor="#ffffff"
+						android:textSize="25px"/>
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<EditText
+							android:id="@+id/regist_password"
+							android:gravity="left"
+							android:layout_width="100dip" 
+							android:layout_height="40dip"
+							android:layout_marginRight="5dip"
+							android:textSize="22px"
+							android:password="true"
+							android:hint="4~8자리"
+							/>	
+						<EditText
+							android:id="@+id/regist_confirmPassword"
+							android:gravity="left"
+							android:layout_width="100dip" 
+							android:layout_height="40dip"
+							android:layout_marginRight="5dip"
+							android:textSize="22px"
+							android:password="true"
+							android:hint="비밀번호확인"
+							/>					
+					</LinearLayout>
+				</TableRow>	
+				<TableRow android:layout_margin="2dip">
+					<TextView
+						android:text="닉네임  :"
+						android:textColor="#ffffff"
+						android:textSize="25px"/>
+					<EditText
+						android:id="@+id/regist_nickname"
+						android:gravity="left"
+						android:layout_width="100dip" 
+						android:layout_height="40dip"
+						android:textSize="22px"
+						android:layout_marginRight="5dip"
+						/>	
+				</TableRow>			
+			</TableLayout>
+			<WebView android:id="@+id/regist_terms"
+					android:layout_height="150dip"
+			      	android:layout_width="fill_parent"
+			/>			
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<CheckBox  android:id="@+id/regist_termsAgree"
+				 	android:layout_alignParentRight="true"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+				</CheckBox>		
+				<TextView
+					android:text="약관에동의 :"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#ffffff"
+					android:layout_toLeftOf="@id/regist_termsAgree"
+					android:textSize="25px"/>
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>					
+</LinearLayout>

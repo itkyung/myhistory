@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_root" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="10dp">
+	<RelativeLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:background="#242424">
+	     	<Button
+	     		android:id="@+id/login_registBtn"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="40dip"
+	     		android:text="회원가입"
+	     		android:textAppearance="?android:attr/textAppearanceSmall"
+	     		android:layout_alignParentLeft="true"
+	     		android:layout_centerVertical="true"
+	     		android:layout_gravity="right"
+	     		android:layout_marginRight="5dip"/>	     
+	     	<TextView
+	     		android:id="@+id/titleBar"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="wrap_content"
+	     		android:textAppearance="?android:attr/textAppearanceLarge"
+	     		android:text="밤스토리"
+	     		android:layout_centerHorizontal="true"
+	     		android:gravity="center_horizontal"
+	     		android:layout_marginLeft="10dip"
+	     		android:layout_marginTop="3dip"
+	     		android:layout_marginBottom="3dip">
+	     	</TextView>
+	     	<Button
+	     		android:id="@+id/login_loginBtn"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="40dip"
+	     		android:text="로그인"
+	     		android:textAppearance="?android:attr/textAppearanceSmall"
+	     		android:layout_alignParentRight="true"
+	     		android:layout_centerVertical="true"
+	     		android:layout_gravity="right"
+	     		android:layout_marginRight="5dip"/>
+	     		
+	</RelativeLayout>	
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dip"
+		android:stretchColumns="*">
+		<TableRow android:layout_margin="2dip">
+			<TextView
+				android:text="아이디 :"
+				android:textColor="#ffffff"
+				android:textSize="25px"/>
+			<EditText
+				android:id="@+id/login_id"
+				android:gravity="left"
+				android:layout_width="100dip" 
+				android:layout_height="40dip"
+				android:textSize="22px"
+				android:layout_marginRight="5dip"
+				/>	
+		</TableRow>
+		<TableRow android:layout_margin="2dip">
+			<TextView
+				android:text="비밀번호 :"
+				android:textColor="#ffffff"
+				android:textSize="25px"/>
+			<EditText
+				android:id="@+id/login_password"
+				android:gravity="left"
+				android:layout_width="wrap_content" 
+				android:layout_height="40dip"
+				android:layout_marginRight="5dip"
+				android:textSize="22px"
+				android:password="true"
+				/>	
+		</TableRow>
+		<TableRow android:layout_margin="2dip">
+			<TextView
+				android:text="자동로그인 :"
+				android:textColor="#ffffff"
+				android:textSize="25px"/>
+				
+			<CheckBox  android:id="@+id/login_autologin" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+			</CheckBox>
+		</TableRow>
+	</TableLayout>	
+	<TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="업소회원께서는 회원가입하지 마시고 별도로 공지해드린 아이디,비밀번호로 접속하시면 됩니다."
+		android:lines="3" android:textAppearance="?android:attr/textAppearanceSmall">
+	</TextView>				
+</LinearLayout>

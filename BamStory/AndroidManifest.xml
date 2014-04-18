@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.bizwave.bamstory"
+      xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="2.7.0" android:versionCode="10">
+    <application android:label="@string/app_name" android:debuggable="true" android:icon="@drawable/android_bamstory">
+    	<uses-library android:name="com.google.android.maps" />
+        <activity android:name=".IntroActivity"
+                  android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+	    <activity android:name=".activity.BamStoryTabActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>
+	    <activity android:name=".activity.BamStoryActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>
+	    <activity android:name=".activity.PartnerContactActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>		
+	    <activity android:name=".activity.MyLocationActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>
+	    <activity android:name=".activity.EventActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>	
+	    <activity android:name=".activity.NewEventActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>		
+	    <activity android:name=".activity.ConfigActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>	
+		<activity android:name=".activity.CallHistoryActivity" android:screenOrientation="portrait">
+			<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.ContactDetailActivity" android:screenOrientation="portrait">
+			<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>		
+		<activity android:name=".activity.ContactEvalActivity" android:screenOrientation="portrait">
+			<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>			
+		<activity android:name=".activity.PartnerDetailActivity" android:screenOrientation="portrait">
+			<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>				
+	    <activity android:name=".activity.CommunityActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>			
+	    <activity android:name=".activity.CurrentMonthBiddingActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>			
+	    <activity android:name=".activity.BiddingDetailActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>			
+	    <activity android:name=".activity.ParticipateBiddingActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>		
+	    <activity android:name=".activity.MyBiddingActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>			
+	    <activity android:name=".activity.NoticeActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>					
+	    <activity android:name=".activity.NoticeDetailActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>					
+	    <activity android:name=".activity.PollActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>				
+	    <activity android:name=".activity.StoryActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>			
+	    <activity android:name=".activity.RegistStoryActivity" 
+	    	android:screenOrientation="portrait"
+	    	android:windowSoftInputMode="stateVisible">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>		
+		<activity android:name=".activity.ReplyActivity"
+			android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>			
+		</activity>
+	    <activity android:name=".activity.LoginActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>			
+	    <activity android:name=".activity.IntroNoticeActivity" android:screenOrientation="portrait">
+		</activity>	
+	    <activity android:name=".activity.MainPageActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>		
+	    <activity android:name=".activity.GirlActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>			
+	    <activity android:name=".activity.MyStoryActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>	
+	    <activity android:name=".activity.GirlDetailActivity" android:screenOrientation="portrait">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>			
+	    <activity android:name=".activity.RegistUserActivity" android:screenOrientation="portrait"
+	    	android:windowSoftInputMode="adjustPan">
+	    	<intent-filter>
+	    		<action android:name="android.intent.action.MAIN"/>
+			</intent-filter>
+		</activity>			
+							
+</application>
+    <uses-sdk android:minSdkVersion="7" />
+
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+
+<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+</manifest> 
